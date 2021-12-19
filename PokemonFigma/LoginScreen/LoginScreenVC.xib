@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Blinker-Regular.ttf">
+            <string>Blinker-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginScreenVC" customModule="PokemonFigma" customModuleProvider="target">
+            <connections>
+                <outlet property="LoginTextField" destination="y5H-vl-jLY" id="Rwl-Ws-zxv"/>
+                <outlet property="PasswordTextField" destination="bGo-4E-7Bf" id="qt0-pH-RfD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundFigure" translatesAutoresizingMaskIntoConstraints="NO" id="Xcl-Bi-I3N">
+                    <rect key="frame" x="0.0" y="432" width="390" height="94"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="wQX-mc-Awn">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="535"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0m-A9-dUI">
+                    <rect key="frame" x="0.0" y="127" width="390" height="28"/>
+                    <fontDescription key="fontDescription" name="Blinker-Regular" family="Blinker" pointSize="23"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AU7-KB-Gc2">
+                    <rect key="frame" x="76" y="354" width="238" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Login">
+                        <backgroundConfiguration key="background" cornerRadius="77">
+                            <color key="backgroundColor" red="0.42352938649999999" green="0.45490196350000001" blue="0.78823530669999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </backgroundConfiguration>
+                        <fontDescription key="titleFontDescription" name="Blinker-Regular" family="Blinker" pointSize="12"/>
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot your password?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlq-4s-vcD">
+                    <rect key="frame" x="0.0" y="409.33333333333331" width="390" height="14"/>
+                    <fontDescription key="fontDescription" name="Blinker-Regular" family="Blinker" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or connect with" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PFQ-90-UkR">
+                    <rect key="frame" x="0.0" y="610" width="390" height="14.666666666666629"/>
+                    <fontDescription key="fontDescription" name="Blinker-Regular" family="Blinker" pointSize="12"/>
+                    <color key="textColor" red="0.63137257099999999" green="0.63137257099999999" blue="0.63137257099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lG-lh-R25">
+                    <rect key="frame" x="34" y="653" width="150" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="W2t-D2-fa8"/>
+                        <constraint firstAttribute="width" constant="150" id="nDN-rh-xtP"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="FacebookIcon" imagePlacement="leading" title="Facebook" imagePadding="17" titleAlignment="automatic">
+                        <backgroundConfiguration key="background" cornerRadius="77">
+                            <color key="backgroundColor" red="0.34509804840000002" green="0.64313727620000005" blue="0.91372549530000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </backgroundConfiguration>
+                        <fontDescription key="titleFontDescription" name="Blinker-Regular" family="Blinker" pointSize="14"/>
+                        <directionalEdgeInsets key="contentInsets" top="0.0" leading="-13" bottom="0.0" trailing="0.0"/>
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVB-uM-rIG">
+                    <rect key="frame" x="208" y="654" width="165" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="165" id="4cM-4D-pJk"/>
+                        <constraint firstAttribute="height" constant="35" id="INc-9J-Tu3"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="TwitterIcon" title="Twitter" imagePadding="13">
+                        <backgroundConfiguration key="background" cornerRadius="77">
+                            <color key="backgroundColor" red="0.34509804840000002" green="0.44705885649999999" blue="0.69019609689999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </backgroundConfiguration>
+                        <fontDescription key="titleFontDescription" name="Blinker-Regular" family="Blinker" pointSize="14"/>
+                        <directionalEdgeInsets key="contentInsets" top="0.0" leading="-29" bottom="0.0" trailing="0.0"/>
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUJ-Dh-L79">
+                    <rect key="frame" x="120" y="746" width="101" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="sQb-Ek-7co"/>
+                        <constraint firstAttribute="width" constant="101" id="whY-ik-2c0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Blinker-Regular" family="Blinker" pointSize="12"/>
+                    <color key="textColor" red="0.63137257099999999" green="0.63137257099999999" blue="0.63137257099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Fs-Xq-6lG">
+                    <rect key="frame" x="218" y="746" width="72" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="0sp-mP-87z"/>
+                        <constraint firstAttribute="width" constant="72" id="iBf-Xk-Red"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Sign up">
+                        <fontDescription key="titleFontDescription" name="Blinker-Regular" family="Blinker" pointSize="12"/>
+                        <color key="baseForegroundColor" red="0.58039218189999997" green="0.60000002379999995" blue="0.84705877299999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </buttonConfiguration>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y5H-vl-jLY">
+                    <rect key="frame" x="75" y="195" width="240" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="bpB-HT-Kk2"/>
+                    </constraints>
+                    <color key="textColor" red="0.63137257099999999" green="0.63137257099999999" blue="0.63137257099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <fontDescription key="fontDescription" name="Blinker-Regular" family="Blinker" pointSize="12"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bGo-4E-7Bf">
+                    <rect key="frame" x="75" y="256" width="240" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="baC-Lq-qBQ"/>
+                    </constraints>
+                    <color key="textColor" red="0.63137257099999999" green="0.63137257099999999" blue="0.63137257099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <fontDescription key="fontDescription" name="Blinker-Regular" family="Blinker" pointSize="12"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
+                </textField>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="5Fs-Xq-6lG" secondAttribute="bottom" constant="50" id="0G3-w8-0XJ"/>
+                <constraint firstAttribute="bottom" secondItem="wQX-mc-Awn" secondAttribute="bottom" constant="309" id="0PH-Ww-j9m"/>
+                <constraint firstItem="bVB-uM-rIG" firstAttribute="top" secondItem="PFQ-90-UkR" secondAttribute="bottom" constant="29.329999999999998" id="1wq-no-xc8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bVB-uM-rIG" secondAttribute="trailing" constant="17" id="3Ca-0B-hXm"/>
+                <constraint firstItem="wQX-mc-Awn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3Ni-i0-Hm4"/>
+                <constraint firstAttribute="bottom" secondItem="Xcl-Bi-I3N" secondAttribute="bottom" constant="318" id="40P-O1-ys6"/>
+                <constraint firstItem="Xcl-Bi-I3N" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4Up-QJ-y8J"/>
+                <constraint firstItem="7lG-lh-R25" firstAttribute="width" secondItem="bVB-uM-rIG" secondAttribute="width" multiplier="0.909091" id="5FL-mg-RWr"/>
+                <constraint firstItem="hlq-4s-vcD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="64L-Q2-58y"/>
+                <constraint firstItem="AU7-KB-Gc2" firstAttribute="top" secondItem="bGo-4E-7Bf" secondAttribute="bottom" constant="58" id="7TD-IL-i36"/>
+                <constraint firstItem="Xcl-Bi-I3N" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="I1T-Wo-m4J"/>
+                <constraint firstItem="Xcl-Bi-I3N" firstAttribute="top" secondItem="hlq-4s-vcD" secondAttribute="bottom" constant="8.6699999999999999" id="La9-kf-OCT"/>
+                <constraint firstItem="y5H-vl-jLY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="75" id="MoD-Y1-XsW"/>
+                <constraint firstItem="AU7-KB-Gc2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="76" id="NEh-he-awl"/>
+                <constraint firstItem="AU7-KB-Gc2" firstAttribute="top" secondItem="bGo-4E-7Bf" secondAttribute="bottom" constant="58" id="RGU-ND-Cte"/>
+                <constraint firstItem="PFQ-90-UkR" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Rl2-y8-B0g"/>
+                <constraint firstItem="Xcl-Bi-I3N" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="432" id="S3g-eF-A9h"/>
+                <constraint firstItem="X0m-A9-dUI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="X0y-ac-hOB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="AU7-KB-Gc2" secondAttribute="trailing" constant="76" id="XTZ-6K-cDw"/>
+                <constraint firstItem="eUJ-Dh-L79" firstAttribute="top" secondItem="bVB-uM-rIG" secondAttribute="bottom" constant="57" id="YAB-HQ-H3j"/>
+                <constraint firstItem="PFQ-90-UkR" firstAttribute="top" secondItem="wQX-mc-Awn" secondAttribute="bottom" constant="75" id="YnK-OJ-gGh"/>
+                <constraint firstItem="bGo-4E-7Bf" firstAttribute="top" secondItem="y5H-vl-jLY" secondAttribute="bottom" constant="21" id="aBh-i0-iPG"/>
+                <constraint firstItem="hlq-4s-vcD" firstAttribute="top" secondItem="AU7-KB-Gc2" secondAttribute="bottom" constant="20.333333333333314" id="bk8-fo-a3v"/>
+                <constraint firstAttribute="trailing" secondItem="y5H-vl-jLY" secondAttribute="trailing" constant="75" id="cox-XI-ynZ"/>
+                <constraint firstItem="X0m-A9-dUI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="127" id="fHz-o3-1qX"/>
+                <constraint firstAttribute="trailing" secondItem="wQX-mc-Awn" secondAttribute="trailing" id="gJc-SR-yUX"/>
+                <constraint firstItem="7lG-lh-R25" firstAttribute="top" secondItem="PFQ-90-UkR" secondAttribute="bottom" constant="28.329999999999998" id="gKq-sN-bhx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hlq-4s-vcD" secondAttribute="trailing" id="gOK-uM-HWc"/>
+                <constraint firstItem="7lG-lh-R25" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="34" id="gXU-T1-FDx"/>
+                <constraint firstItem="hlq-4s-vcD" firstAttribute="top" secondItem="AU7-KB-Gc2" secondAttribute="bottom" constant="20.333333333333314" id="hX9-2c-Uv6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5Fs-Xq-6lG" secondAttribute="trailing" constant="100" id="hnq-uO-bCr"/>
+                <constraint firstItem="eUJ-Dh-L79" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="120" id="i7T-2Z-DUT"/>
+                <constraint firstItem="bVB-uM-rIG" firstAttribute="leading" secondItem="7lG-lh-R25" secondAttribute="trailing" constant="24" id="iMq-n3-aGV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bGo-4E-7Bf" secondAttribute="trailing" constant="75" id="iNj-pR-jWa"/>
+                <constraint firstItem="PFQ-90-UkR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="lb5-NI-iCH"/>
+                <constraint firstItem="wQX-mc-Awn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="n8L-0h-g0Q"/>
+                <constraint firstItem="5Fs-Xq-6lG" firstAttribute="top" secondItem="bVB-uM-rIG" secondAttribute="bottom" constant="57" id="o7P-lA-EqG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="X0m-A9-dUI" secondAttribute="trailing" id="po2-le-U0E"/>
+                <constraint firstItem="bGo-4E-7Bf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="75" id="rEI-1Z-sMu"/>
+                <constraint firstItem="y5H-vl-jLY" firstAttribute="top" secondItem="X0m-A9-dUI" secondAttribute="bottom" constant="40" id="x6c-ga-sxw"/>
+            </constraints>
+            <point key="canvasLocation" x="60" y="103.7914691943128"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Background" width="377" height="512"/>
+        <image name="BackgroundFigure" width="376" height="94"/>
+        <image name="FacebookIcon" width="13" height="16"/>
+        <image name="TwitterIcon" width="18" height="18"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
