@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E41E866A27708FC1004D310D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E41E866927708FC1004D310D /* GoogleService-Info.plist */; };
+		E41E866B27708FC1004D310D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E41E866927708FC1004D310D /* GoogleService-Info.plist */; };
+		E41E866C27708FC1004D310D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E41E866927708FC1004D310D /* GoogleService-Info.plist */; };
+		E41E866F277091CF004D310D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E41E866E277091CF004D310D /* FirebaseAuth */; };
+		E41E8671277091CF004D310D /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = E41E8670277091CF004D310D /* FirebaseAuthCombine-Community */; };
+		E41E8673277091CF004D310D /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = E41E8672277091CF004D310D /* FirebaseFirestore */; };
+		E453FCB2277074E9000D7FBC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E453FCB1277074E9000D7FBC /* Alamofire */; };
+		E453FCBA277088F9000D7FBC /* HomeScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E453FCB8277088F9000D7FBC /* HomeScreenVC.swift */; };
+		E453FCBB277088F9000D7FBC /* HomeScreenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E453FCB9277088F9000D7FBC /* HomeScreenVC.xib */; };
 		E4605BBE276F217A007B7342 /* Blinker-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E4605BBD276F217A007B7342 /* Blinker-Regular.ttf */; };
 		E4FE5E18276C88FE002F4BCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FE5E17276C88FE002F4BCF /* AppDelegate.swift */; };
 		E4FE5E1A276C88FE002F4BCF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FE5E19276C88FE002F4BCF /* SceneDelegate.swift */; };
@@ -37,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E41E866927708FC1004D310D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E453FCB8277088F9000D7FBC /* HomeScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenVC.swift; sourceTree = "<group>"; };
+		E453FCB9277088F9000D7FBC /* HomeScreenVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeScreenVC.xib; sourceTree = "<group>"; };
 		E4605BBD276F217A007B7342 /* Blinker-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blinker-Regular.ttf"; sourceTree = "<group>"; };
 		E4FE5E14276C88FE002F4BCF /* PokemonFigma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokemonFigma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4FE5E17276C88FE002F4BCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +70,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E453FCB2277074E9000D7FBC /* Alamofire in Frameworks */,
+				E41E8673277091CF004D310D /* FirebaseFirestore in Frameworks */,
+				E41E8671277091CF004D310D /* FirebaseAuthCombine-Community in Frameworks */,
+				E41E866F277091CF004D310D /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +94,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E453FCB32770883F000D7FBC /* HomeScreenVC */ = {
+			isa = PBXGroup;
+			children = (
+				E453FCB8277088F9000D7FBC /* HomeScreenVC.swift */,
+				E453FCB9277088F9000D7FBC /* HomeScreenVC.xib */,
+			);
+			path = HomeScreenVC;
+			sourceTree = "<group>";
+		};
 		E4605BBC276F20D6007B7342 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,7 +134,9 @@
 		E4FE5E16276C88FE002F4BCF /* PokemonFigma */ = {
 			isa = PBXGroup;
 			children = (
+				E41E866927708FC1004D310D /* GoogleService-Info.plist */,
 				E4FE5E47276C898C002F4BCF /* LoginScreen */,
+				E453FCB32770883F000D7FBC /* HomeScreenVC */,
 				E4FE5E17276C88FE002F4BCF /* AppDelegate.swift */,
 				E4FE5E19276C88FE002F4BCF /* SceneDelegate.swift */,
 				E4FE5E20276C88FF002F4BCF /* Assets.xcassets */,
@@ -162,6 +189,12 @@
 			dependencies = (
 			);
 			name = PokemonFigma;
+			packageProductDependencies = (
+				E453FCB1277074E9000D7FBC /* Alamofire */,
+				E41E866E277091CF004D310D /* FirebaseAuth */,
+				E41E8670277091CF004D310D /* FirebaseAuthCombine-Community */,
+				E41E8672277091CF004D310D /* FirebaseFirestore */,
+			);
 			productName = PokemonFigma;
 			productReference = E4FE5E14276C88FE002F4BCF /* PokemonFigma.app */;
 			productType = "com.apple.product-type.application";
@@ -234,6 +267,10 @@
 				Base,
 			);
 			mainGroup = E4FE5E0B276C88FE002F4BCF;
+			packageReferences = (
+				E453FCB0277074E9000D7FBC /* XCRemoteSwiftPackageReference "Alamofire" */,
+				E41E866D277091CF004D310D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = E4FE5E15276C88FE002F4BCF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -254,6 +291,8 @@
 				E4605BBE276F217A007B7342 /* Blinker-Regular.ttf in Resources */,
 				E4FE5E21276C88FF002F4BCF /* Assets.xcassets in Resources */,
 				E4FE5E4F276C8B4E002F4BCF /* LoginScreenVC.xib in Resources */,
+				E453FCBB277088F9000D7FBC /* HomeScreenVC.xib in Resources */,
+				E41E866A27708FC1004D310D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +300,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E41E866B27708FC1004D310D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +308,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E41E866C27708FC1004D310D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +322,7 @@
 				E4FE5E4E276C8B4E002F4BCF /* LoginScreenVC.swift in Sources */,
 				E4FE5E18276C88FE002F4BCF /* AppDelegate.swift in Sources */,
 				E4FE5E1A276C88FE002F4BCF /* SceneDelegate.swift in Sources */,
+				E453FCBA277088F9000D7FBC /* HomeScreenVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -630,6 +672,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E41E866D277091CF004D310D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		E453FCB0277074E9000D7FBC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E41E866E277091CF004D310D /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E41E866D277091CF004D310D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		E41E8670277091CF004D310D /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E41E866D277091CF004D310D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		E41E8672277091CF004D310D /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E41E866D277091CF004D310D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		E453FCB1277074E9000D7FBC /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E453FCB0277074E9000D7FBC /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E4FE5E0C276C88FE002F4BCF /* Project object */;
 }
