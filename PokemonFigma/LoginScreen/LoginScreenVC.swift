@@ -41,7 +41,7 @@ class LoginScreenVC: UIViewController {
         configureTextFields()
     }
     
-    
+        // Standart text configuring function
     private func configureTextFields() {
         LoginTextField.delegate = self
         PasswordTextField.delegate = self
@@ -51,7 +51,7 @@ class LoginScreenVC: UIViewController {
     // Login button Actions
     @IBAction func loginButtonAction(_ sender: Any) {
         // Adding alert message and button to dismiss it
-        let alert = UIAlertController(title: "Authentication Error", message: "Invalid Login Or Password", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Authentication Error", message: "Incorrect Login or Password", preferredStyle: .alert)
         let okButton = UIAlertAction(title: "OK", style: .default, handler: nil)
         alert.addAction(okButton)
         
